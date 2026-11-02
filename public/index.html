@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RYVORA — Ideas Built Into Digital Experiences | Arif Mohamed</title>
+
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="RYVORA — Ideas Built Into Digital Experiences | Arif Mohamed" />
+  <meta name="description"
+    content="A collection of websites, applications, and digital projects created by Arif Mohamed under RYVORA." />
+  <meta name="author" content="Arif Mohamed" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Facebook / Instagram -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ryvora.agency/" />
+  <meta property="og:title" content="RYVORA — Ideas Built Into Digital Experiences" />
+  <meta property="og:description"
+    content="A collection of websites, applications, and digital projects created by Arif Mohamed under RYVORA." />
+  <meta property="og:site_name" content="RYVORA" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="RYVORA — Ideas Built Into Digital Experiences" />
+  <meta property="twitter:description"
+    content="A collection of websites, applications, and digital projects created by Arif Mohamed under RYVORA." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg" />
+
+  <!-- Google Fonts: Space Grotesk, Plus Jakarta Sans, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Portfolio Stylesheet -->
+  <link rel="stylesheet" href="/css/portfolio.css" />
+</head>
+
+<body>
+
+  <!-- ==========================================================================
+       NAVIGATION BAR (Minimal, Sticky, Responsive)
+       ========================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="site-container header-container">
+
+      <!-- Brand Wordmark & Emblem -->
+      <a href="#home" class="brand-anchor" aria-label="RYVORA Homepage">
+        <div class="brand-emblem">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+        </div>
+        <span class="brand-name">RYVORA</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Desktop Action CTA -->
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-primary nav-cta-btn">
+          <span>Get In Touch</span>
+        </a>
+
+        <!-- Mobile Hamburger Toggle Button -->
+        <button type="button" class="mobile-nav-toggle" id="mobile-toggle-btn" aria-label="Toggle navigation menu"
+          aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop Overlay -->
+  <div class="mobile-drawer-backdrop" id="mobile-drawer-backdrop" aria-hidden="true"></div>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-top">
+      <div class="brand-anchor">
+        <div class="brand-emblem">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+        </div>
+        <span class="brand-name">RYVORA</span>
+      </div>
+      <button type="button" class="mobile-drawer-close" id="mobile-drawer-close" aria-label="Close Navigation Menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <ul class="mobile-nav-links-list">
+      <li><a href="#home" class="mobile-nav-link">Home</a></li>
+      <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+      <li><a href="#about" class="mobile-nav-link">About</a></li>
+      <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+    </ul>
+
+    <div class="mobile-drawer-bottom">
+      <a href="#contact" class="btn btn-primary">
+        <span>Get In Touch</span>
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION (Clean Light, Modern Typography)
+         ========================================================================== -->
+    <section class="hero-section" id="home">
+      <!-- Subtle modern grid pattern -->
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+
+      <div class="site-container hero-container">
+
+        <!-- Eyebrow Badge -->
+        <div class="hero-status-pill">
+          <span class="status-pulse-dot" aria-hidden="true"></span>
+          <span class="brand-slug">ARIF MOHAMED // RYVORA</span>
+          <span class="divider">•</span>
+          <span>Available for projects</span>
+        </div>
+
+        <!-- Main Heading -->
+        <h1 class="hero-heading">
+          Ideas Built Into <span class="text-accent">Digital Experiences.</span>
+        </h1>
+
+        <!-- Subheading Description -->
+        <p class="hero-description">
+          A collection of websites, applications, and digital projects created by Arif Mohamed under RYVORA.
+        </p>
+
+        <!-- Two Action Buttons -->
+        <div class="hero-cta-wrap">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explore Projects</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <span>Get In Touch</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PROJECTS SECTION (The Core Showcase)
+         ========================================================================== -->
+    <section class="projects-section" id="projects">
+      <div class="site-container">
+
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-eyebrow">PORTFOLIO</div>
+          <h2 class="section-title">My Projects</h2>
+          <p class="section-desc">
+            A collection of real projects, experiments, and digital experiences I have built.
+          </p>
+        </div>
+
+        <!-- Dynamic / Static Projects Grid Container -->
+        <!-- Note: Managed by /js/projects.js for easy future expansion -->
+        <div class="projects-grid" id="projects-grid">
+
+          <!-- PROJECT 01 — QR STUDIO (Server-rendered fallback & instant display) -->
+          <article class="project-card" data-project-id="qr-studio" data-index="01">
+            <div class="project-preview-wrap">
+              <!-- Honest, bespoke QR Studio UI Preview Component -->
+              <div class="qr-preview-stage" aria-hidden="true">
+                <div class="qr-preview-chrome">
+                  <div class="chrome-dots">
+                    <span class="dot dot-red"></span>
+                    <span class="dot dot-yellow"></span>
+                    <span class="dot dot-green"></span>
+                  </div>
+                  <div class="chrome-address">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.5">
+                      <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                      <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg>
+                    <span>qr-scanner-beta-opal.vercel.app</span>
+                  </div>
+                  <div class="chrome-badge">
+                    <span>LIVE WEB APP</span>
+                  </div>
+                </div>
+
+                <div class="qr-scanner-viewport">
+                  <div class="qr-grid-pattern"></div>
+
+                  <div class="qr-viewfinder">
+                    <span class="corner corner-tl"></span>
+                    <span class="corner corner-tr"></span>
+                    <span class="corner corner-bl"></span>
+                    <span class="corner corner-br"></span>
+
+                    <div class="qr-scan-beam"></div>
+
+                    <svg class="qr-matrix-svg" viewBox="0 0 100 100" fill="currentColor">
+                      <!-- Top-Left Finder Pattern -->
+                      <rect x="10" y="10" width="24" height="24" rx="3" fill="none" stroke="currentColor"
+                        stroke-width="4" />
+                      <rect x="17" y="17" width="10" height="10" rx="1.5" fill="currentColor" />
+
+                      <!-- Top-Right Finder Pattern -->
+                      <rect x="66" y="10" width="24" height="24" rx="3" fill="none" stroke="currentColor"
+                        stroke-width="4" />
+                      <rect x="73" y="17" width="10" height="10" rx="1.5" fill="currentColor" />
+
+                      <!-- Bottom-Left Finder Pattern -->
+                      <rect x="10" y="66" width="24" height="24" rx="3" fill="none" stroke="currentColor"
+                        stroke-width="4" />
+                      <rect x="17" y="73" width="10" height="10" rx="1.5" fill="currentColor" />
+
+                      <!-- Cells & Alignment Details -->
+                      <rect x="42" y="12" width="6" height="6" rx="1" />
+                      <rect x="52" y="12" width="6" height="6" rx="1" />
+                      <rect x="42" y="24" width="6" height="6" rx="1" />
+                      <rect x="48" y="32" width="6" height="6" rx="1" />
+                      <rect x="12" y="42" width="6" height="6" rx="1" />
+                      <rect x="24" y="42" width="6" height="6" rx="1" />
+                      <rect x="32" y="48" width="6" height="6" rx="1" />
+                      <rect x="42" y="42" width="16" height="16" rx="2" fill="none" stroke="currentColor"
+                        stroke-width="3" />
+                      <rect x="47" y="47" width="6" height="6" rx="1" />
+                      <rect x="66" y="42" width="6" height="6" rx="1" />
+                      <rect x="78" y="42" width="8" height="6" rx="1" />
+                      <rect x="66" y="52" width="18" height="6" rx="1" />
+                      <rect x="42" y="66" width="6" height="8" rx="1" />
+                      <rect x="52" y="72" width="8" height="6" rx="1" />
+                      <rect x="42" y="80" width="12" height="6" rx="1" />
+                      <rect x="66" y="68" width="8" height="8" rx="1" />
+                      <rect x="78" y="74" width="12" height="12" rx="1" />
+                    </svg>
+                  </div>
+
+                  <div class="qr-capability-row">
+                    <span class="cap-pill">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z">
+                        </path>
+                        <circle cx="12" cy="13" r="4"></circle>
+                      </svg>
+                      Camera Scanner
+                    </span>
+                    <span class="cap-pill">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                        <polyline points="21 15 16 10 5 21"></polyline>
+                      </svg>
+                      Upload Image
+                    </span>
+                    <span class="cap-pill">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                      </svg>
+                      Generate Codes
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta-top">
+                <span class="project-index">PROJECT 01</span>
+                <span class="project-status-badge">
+                  <span class="status-pulse-dot" aria-hidden="true"></span>
+                  Live Project
+                </span>
+              </div>
+
+              <h3 class="project-title">QR Studio</h3>
+
+              <p class="project-description">
+                A simple and user-friendly QR code scanner and generator that allows users to scan QR codes using their
+                device camera or upload an image.
+              </p>
+
+              <div class="project-tech-tags" aria-label="Technologies used">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://qr-scanner-beta-opal.vercel.app/" target="_blank" rel="noopener noreferrer"
+                  class="btn-project-link primary" aria-label="View live QR Studio project (opens in a new tab)">
+                  <span>View Project</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ABOUT SECTION (Minimal & Authentic Behind RYVORA)
+         ========================================================================== -->
+    <section class="about-section" id="about">
+      <div class="site-container">
+
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-eyebrow">ABOUT THE CREATOR</div>
+          <h2 class="section-title">Behind RYVORA</h2>
+        </div>
+
+        <!-- About Card -->
+        <div class="about-card-container">
+
+          <div class="about-profile-header">
+            <div class="profile-avatar-emblem" aria-hidden="true">
+              <span>AM</span>
+            </div>
+            <div class="profile-meta">
+              <h3 class="creator-name">Arif Mohamed</h3>
+              <p class="creator-role">Founder &amp; Developer // RYVORA</p>
+            </div>
+          </div>
+
+          <p class="about-text-statement">
+            Hi, I'm Arif Mohamed, an Artificial Intelligence &amp; Data Science student with an interest in building
+            modern, functional, and user-friendly digital experiences. RYVORA is where I showcase the projects and ideas
+            I bring to life.
+          </p>
+
+          <!-- Core Developer Focus Pillars -->
+          <div class="about-focus-grid">
+            <div class="focus-card">
+              <div class="focus-card-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h4>Clean Code</h4>
+              <p>Writing semantic, lightweight, and maintainable frontend architectures.</p>
+            </div>
+
+            <div class="focus-card">
+              <div class="focus-card-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                  <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                </svg>
+              </div>
+              <h4>User-Centric Design</h4>
+              <p>Designing mobile-first, responsive interfaces tailored for clarity and speed.</p>
+            </div>
+
+            <div class="focus-card">
+              <div class="focus-card-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 14 14"></polyline>
+                </svg>
+              </div>
+              <h4>Continuous Learning</h4>
+              <p>Exploring modern advancements across AI, data science, and web development.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT SECTION (Direct Contact Cards + Fast Message Form)
+         ========================================================================== -->
+    <section class="contact-section" id="contact">
+      <div class="site-container">
+
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-eyebrow">GET IN TOUCH</div>
+          <h2 class="section-title">Have an Idea? Let's Build It.</h2>
+          <p class="section-desc">
+            Have a project or idea in mind? Feel free to get in touch.
+          </p>
+        </div>
+
+        <!-- Quick Direct Inquiry Form (Connects to WhatsApp) -->
+        <div class="contact-form-box">
+          <div class="contact-form-header">
+            <h3>Send a Direct Note</h3>
+            <p>Enter your name and message below to connect with Arif on WhatsApp.</p>
+          </div>
+
+          <div id="form-feedback-alert" class="form-feedback-alert" role="alert" aria-live="polite"></div>
+
+          <!-- ==============================================================================
+               WHATSAPP CONTACT FORM
+               Pre-fills WhatsApp message format and opens direct chat on click.
+               Target Number: +91 85250 39751 (Configured in /js/portfolio-app.js and .env)
+               ============================================================================== -->
+          <form id="quick-contact-form" novalidate>
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Your Name</label>
+              <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. John Doe" required
+                autocomplete="name" />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message</label>
+              <textarea id="contact-message" name="message" class="form-textarea"
+                placeholder="Tell me about your idea or project goals..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-form-submit" id="contact-submit-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                </path>
+              </svg>
+              <span>Send via WhatsApp</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="site-container footer-container">
+      <div class="footer-brand">RYVORA</div>
+      <div class="footer-tagline">Your Vision. Our Website.</div>
+      <div class="footer-copyright">
+        &copy; 2026 RYVORA. Built by Arif Mohamed.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Modules -->
+  <script type="module" src="/js/portfolio-app.js"></script>
+</body>
+
+</html>

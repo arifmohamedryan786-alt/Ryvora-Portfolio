@@ -1,0 +1,26 @@
+{
+  "name": "ryvora-webpage",
+  "version": "1.0.0",
+  "description": "RYVORA — Premium Website Design & Development Agency Platform",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "seed:admin": "node scripts/seed-admin.js"
+  },
+  "keywords": [
+    "ryvora",
+    "web-development",
+    "agency",
+    "portfolio",
+    "crm"
+  ],
+  "author": "RYVORA",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}
