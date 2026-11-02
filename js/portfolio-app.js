@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initSectionObservers();
   initContactActions();
   initContactForm();
-  loadAgencyConfig();
 });
 
 /**
@@ -207,14 +206,9 @@ function initContactActions() {
 export const WHATSAPP_PHONE_NUMBER = '918525039751';
 
 /**
- * Helper to get the active WhatsApp phone number (from config or default constant)
+ * Helper to get the active WhatsApp phone number
  */
 function getActiveWhatsAppNumber() {
-  const backendNumber = window.RYVORA_CONFIG?.contact?.whatsapp;
-  if (backendNumber && typeof backendNumber === 'string') {
-    const cleaned = backendNumber.replace(/[^0-9]/g, '');
-    if (cleaned.length >= 7) return cleaned;
-  }
   return WHATSAPP_PHONE_NUMBER;
 }
 
@@ -280,33 +274,6 @@ function initContactForm() {
     alertBox.textContent = msg;
     alertBox.className = `form-feedback-alert is-${type}`;
     alertBox.style.display = 'block';
-  }
-}
-
-/**
- * 8. Asynchronously sync agency configuration from backend if available
- */
-async function loadAgencyConfig() {
-  try {
-    const res = await fetch('/api/config');
-    if (!res.ok) return;
-    const data = await res.json();
-    window.RYVORA_CONFIG = data;
-
-    if (data.contact) {
-      // WhatsApp links
-      if (data.contact.whatsapp) {
-        const cleanNumber = data.contact.whatsapp.replace(/[^0-9]/g, '');
-        document.querySelectorAll('[data-config="whatsapp-link"]').forEach(el => {
-          el.href = `https://wa.me/${cleanNumber}`;
-        });
-        document.querySelectorAll('[data-config="whatsapp-text"]').forEach(el => {
-          el.textContent = data.contact.whatsapp;
-        });
-      }
-    }
-  } catch (err) {
-    // Graceful fallback to static HTML defaults
   }
 }
 

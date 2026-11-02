@@ -1,26 +1,19 @@
 {
-  "name": "ryvora-webpage",
+  "name": "ryvora-portfolio",
   "version": "1.0.0",
-  "description": "RYVORA — Premium Website Design & Development Agency Platform",
-  "main": "server.js",
+  "description": "RYVORA — Ideas Built Into Digital Experiences | Official Portfolio of Arif Mohamed",
   "type": "module",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node --watch server.js",
-    "seed:admin": "node scripts/seed-admin.js"
+    "dev": "npx serve -l 3000 .",
+    "start": "npx serve -l 3000 .",
+    "build": "echo 'Frontend static site ready'"
   },
   "keywords": [
     "ryvora",
-    "web-development",
-    "agency",
     "portfolio",
-    "crm"
+    "developer",
+    "web-development"
   ],
-  "author": "RYVORA",
-  "license": "ISC",
-  "dependencies": {
-    "cookie-parser": "^1.4.7",
-    "dotenv": "^16.4.7",
-    "express": "^4.21.2"
-  }
+  "author": "Arif Mohamed",
+  "license": "ISC"
 }
